@@ -72,7 +72,7 @@ module RSpotify
       end
 
       return response if raw_response
-      JSON.parse response unless response.empty?
+      JSON.parse response unless response.nil && response.empty?
     end
     
     # Added this method for testing
